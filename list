@@ -1,0 +1,9 @@
+local ImNotDumb = {
+    3415172895,
+}
+local Blacklist = {
+
+}
+if not table.find(ImNotDumb, game:GetService("Players").LocalPlayer.UserId) then
+    game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer({"md"}, CFrame.new())
+end
